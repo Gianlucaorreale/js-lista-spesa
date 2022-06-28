@@ -21,4 +21,17 @@ shopList.innerHTML = shopElements;
 
 /*-----VERSIONE CON WHILE--------*/
 
+const shopItems = ['uova', 'pane','latte', 'biscotti', 'pasta', 'affettati', 'formaggio', 'verdura', 'frutta'];
+console.table(shopItems);
+const shopList = document.getElementById ('shop-list');
 
+let shopElements = '<ul>'
+
+let i=0;
+while ( i<shopItems.length){
+    shopElements += `<li>${shopItems[i]}</li>`
+    i++
+}
+shopElements += '</ul>'
+
+shopList.innerHTML = shopElements;
